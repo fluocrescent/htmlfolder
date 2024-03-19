@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Buttons</title>
+    <style>
+        /* Center the container horizontally and vertically */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make the container take up the full height of the viewport */
+        }
+
+        /* Style the buttons */
+        button {
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 8px;
+            font-size: 28px;
+        }
+
+        /* Change button background color on hover */
+        button:hover {
+            background-color: #a04545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="buttonClicked(1)">Button 1</button>
+        <button onclick="buttonClicked(2)">Button 2</button>
+    </div>
+
+    <script>
+        // Function to handle button clicks
+        function buttonClicked(buttonNumber) {
+            alert("You Chose Button " + buttonNumber + "!");
+        }
+    </script>
+</body>
+</html>
