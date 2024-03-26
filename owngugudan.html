@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>GUGUDAN PAGE</title>>
+        <script>
+            window.onload = function () {
+            const listElement = document.getElementById("numlist");
+
+            for(let i = 1; i<10; i++){
+                for(let j = 1; j<10; j++){
+                    let result = i*j;
+
+                    const listItem = document.createElement("ol"); 
+                    //element이름 의미 있는 거 - ex. p, li, ol 로 써야 렌더링 방식 조절이 가능하다. 
+                    listItem.innerText = "" + i + " x " + j + " = " + result; 
+                    listElement.appendChild(listItem);
+                }
+            }
+        }
+
+
+        </script>    
+    </head>>    
+    <body>
+        <h1>GUGUDAN PAGE</h1>
+        <u1 id = "numlist"></u1>
+
+    </body>
